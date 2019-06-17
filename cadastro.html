@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Criar um post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="cadastro.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="./imagens/logo.png" alt="Logo" />
+      <nav id="menu-header">
+        <ul id="links-paginas">
+          <li><a href="./index.html">BLOG</a></li>
+          <li class="link-pagina-ativo">
+            <a href="./cadastro.html">ESCREVA UM POST</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="novo-post">
+        <p>Autor</p>
+        <input id="autor-post" />
+        <p>Escreva o título do Post</p>
+        <input id="titulo-post" />
+        <p>Escreva uma URL válida para inserir uma foto</p>
+        <input id="imagem-post" />
+        <p>Escreva o conteúdo do Post</p>
+        <textarea rows="20" id="conteudo-post"></textarea>
+        <button type="button" id="publicar-post">Publicar</button>
+      </div>
+    </main>
+  </body>
+</html>

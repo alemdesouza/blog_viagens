@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="post.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="./imagens/logo.png" alt="Logo" />
+      <nav id="menu-header">
+        <ul id="links-paginas">
+            <li class="link-pagina-ativo"><a href="./index.html">BLOG</a></li>
+            <li><a href="./cadastro.html">ESCREVA UM POST</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="pagina-de-posts">
+      <div id="info-post">
+        <div class="center">
+          <h1 id="titulo-post"></h1>
+          <div class="flex">
+            <p id="autor-post"></p>
+            <p id="data-post"></p>
+          </div>
+          <img id="imagem-post" src="" alt="" />
+        </div>
+        <p id="conteudo-post"></p>
+
+        <!-- CURTIDAS -->
+        <div class="post-info">
+          <p><span id="curtidas-post">0</span> curtidas</p>
+          <img
+            class="heart"
+            src="https://cdn3.vectorstock.com/i/1000x1000/40/72/red-heart-icon-line-color-love-symbol-isol-vector-21084072.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- COMENTARIOS -->
+      <section id="comentarios-post">
+        <div class="novo-comentario">
+          <p>Escreva seu nome</p>
+          <input id="nome-comentario" />
+          <p>Escreva seu comentário</p>
+          <textarea rows="10" id="novo-comentario"></textarea>
+          <button type="button" id="publicar-comentario">Publicar</button>
+        </div>
+
+        <div class="comentarios-pessoas">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
