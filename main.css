@@ -216,6 +216,7 @@ main .flex {
     height: 30px;
     margin-top: 10px;
     font-size: 1em;
+    background: white;
 }
 
 .comentarios-pessoas {
@@ -251,4 +252,27 @@ main .flex {
     padding: 20px;
     box-sizing: border-box;
     font-size: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+
+  header {
+    display: block;
+    height: auto;
+  }
+
+  #menu-header {
+    margin: 20px 0;
+    border: none;
+  }
+
+  body {
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }
