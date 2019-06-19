@@ -276,3 +276,17 @@ main .flex {
     box-sizing: border-box;
   }
 }
+
+#links-github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 20px;
+}
+
+#links-github img {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
